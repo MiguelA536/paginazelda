@@ -1,0 +1,135 @@
+
+html, body {
+    height: 100%; /* Que ocupen toda la altura disponible */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .container {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+footer {
+    background-color: #212529; /* Fondo oscuro como .bg-dark */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+
+body {
+    background-image: url("https://www.nintenderos.com/wp-content/uploads/2009/08/ganon1.jpg") !important;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85) !important; /* negro semi-transparente */
+}
+
+.navbar.bg-dark {
+    background-color: rgba(0, 0, 0, 0.85) !important; /* negro semi-transparente */
+}
+
+.caja-transparente {
+    background-color: rgba(0, 0, 0, 0.85) !important; /* negro semi-transparente */
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%; /* Establecer un ancho fijo */
+    height: 540px;
+    margin: 40px auto; /* Centrar verticalmente y horizontalmente */
+    text-align: justify;    
+}
+
+.caja-transparente h1 {
+    font-size: 3rem;
+    margin: 0 0 10px;
+    text-align: center;
+}
+.caja-transparente p {
+    font-size: 1.2rem;
+    margin: 0;
+    justify-self: unset;
+}
+
+/* Personajes / Personajes / Personajes / Personajes /Personajes /Personajes / Personajes / Personajes /Personajes / Personajes */
+/* Personajes / Personajes / Personajes / Personajes /Personajes /Personajes / Personajes / Personajes /Personajes / Personajes */
+/* Personajes / Personajes / Personajes / Personajes /Personajes /Personajes / Personajes / Personajes /Personajes / Personajes */
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.card {
+    border: 2px solid white;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer; /* Cambio de cursor para indicar que se puede clicar */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1) rotate(3deg);
+    filter: brightness(90%);
+}
+
+/* Ajustes adicionales para las imágenes */
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 300px; /* Ajusta la altura de la imagen (puedes poner el tamaño que desees) */
+    object-fit: contain; /* Hace que la imagen se ajuste dentro del contenedor sin perder proporción */
+    border-bottom: 2px solid black; /* Borde debajo de la imagen */
+    transition: all 0.3s ease;
+}
+
+/* Texto oculto inicialmente */
+.oculto {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Al hacer clic, cambia la clase 'oculto' y aparece */
+.card .card-text {
+    transition: all 0.3s ease;
+    font-size: 100%;
+}
+
+/* Estilo general del card-body */
+.card-body {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+.card-body h5 {
+    font-size: 120%;
+    margin: 0 0 10px;
+    text-align: center;
+}
+.card-text {
+    text-align: justify; /* <- aquí justificamos el texto */
+  }
+
+.formulario-ajustado {
+    max-width: 70%; /* Ancho máximo */
+    width: 100%; /* Ancho del 100% hasta el máximo */
+    margin: 20px auto; /* Centrado horizontal */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    color: white; /* Color de texto blanco para resaltar sobre el fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Asegura que el pie de página se mantenga en la parte inferior */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

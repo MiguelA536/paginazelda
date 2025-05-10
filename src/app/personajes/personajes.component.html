@@ -1,0 +1,93 @@
+<p>personajes works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The Legend of Zelda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css">
+    <link rel="icon" href="https://images.seeklogo.com/logo-png/31/2/triforce-logo-png_seeklogo-312630.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.HTML">
+                <img src="https://images.seeklogo.com/logo-png/31/2/triforce-logo-png_seeklogo-312630.png" alt="Logo" style="height: 60px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="Index.HTML">Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="container my-5" id="juegos">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleCard(this)">
+                    <img src="https://cdn.wikimg.net/en/zeldawiki/images/thumb/3/35/OoT3D_Link_Model.png/269px-OoT3D_Link_Model.png" class="card-img-top" alt="Link">
+                    <div class="card-body">
+                        <h5 class="card-title">Link</h5>
+                        <div class="card-text oculto">
+                            Link es el valiente héroe elegido por la diosa Hylia para proteger Hyrule. Armado con la Espada Maestra, enfrenta numerosos peligros y enemigos para rescatar a Zelda y detener las fuerzas del mal.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleCard(this)">
+                    <img src="https://zelda.nintendo.com/assets/img/about/zelda_play.png" class="card-img-top" alt="Zelda">
+                    <div class="card-body">
+                        <h5 class="card-title">Zelda</h5>
+                        <div class="card-text oculto">
+                            Zelda es la sabia y valiente princesa de Hyrule. Con un profundo vínculo con la Trifuerza de la Sabiduría, guía a Link en su misión y, a menudo, desempeña un papel crucial en la defensa del reino.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleCard(this)">
+                    <img src="https://www.universozelda.com/wp-content/uploads/2017/02/Ganondorf_OoT3D-2.png" class="card-img-top" alt="Ganondorf">
+                    <div class="card-body">
+                        <h5 class="card-title">Ganondorf</h5>
+                        <div class="card-text oculto">
+                            Ganondorf, imponente rey gerudo y principal antagonista de la saga. Ambicioso y poderoso, busca conquistar Hyrule usando la Trifuerza del Poder para sumir el mundo en la oscuridad.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleCard(card) {
+            const text = card.querySelector('.card-text');
+            text.classList.toggle('oculto');
+        }
+    </script>
+
+<footer class="bg-dark text-center text-white py-4 mt-5">
+    <div class="container">
+      <p>Nintendo © 2025 The Legend of Zelda. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
