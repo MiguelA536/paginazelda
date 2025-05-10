@@ -43,10 +43,10 @@ body {
     padding: 25px;
     border-radius: 15px;
     text-align: center;
-    width: 90%; /* Establecer un ancho fijo */
-    height: 540px;
-    margin: 40px auto; /* Centrar verticalmente y horizontalmente */
-    text-align: justify;    
+    max-width: 90%; /* El contenedor no se expandirá más allá del 90% del contenedor principal */
+    margin: 40px auto; /* Centrar vertical y horizontalmente */
+    text-align: justify; 
+    /* El contenedor se ajustará a la altura de su contenido sin necesidad de especificar una altura fija */
 }
 
 .caja-transparente h1 {
@@ -66,9 +66,9 @@ body {
 
 /* Estilo para las imágenes dentro de las tarjetas */
 .card {
-    border: 2px solid white;
+    border: 2px solid black;
     margin-bottom: 20px;
-    border-radius: 100px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     overflow: hidden;
@@ -133,3 +133,5 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*Nota mental, este colo esta bien #ffdf00*/
